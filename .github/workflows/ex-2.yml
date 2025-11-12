@@ -47,7 +47,7 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SECRET_TOKEN }}
-        run: ./gradlew build sonar --info
+        run: ./app/src/gradlew build sonar --info
  Linting:
     runs-on: ubuntu-latest
     needs: [Build]
